@@ -1,0 +1,122 @@
+
+/* Estilo do mapa tomtom do projeto */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+
+    background: url(./Images/patrick-fore-HVFYFns30-I-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-bottom: 50px;
+
+}
+
+ .containerTittle h1 {
+    color: #ccc;
+    margin: 0;
+    }
+
+.containerTittle { 
+    height: 44px;
+    width: 160px; 
+    margin-bottom: 16px;
+    text-align: center;
+
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+#map-div {
+    width: 70vw;
+    height: 65vh;
+    margin-bottom: 10px;
+
+    border-radius: 14px;
+    background-color: #ccc;
+}
+
+#btn {
+    width: 55vw;
+    height: 5vh;
+    padding: 4px;
+    border: 1px solid #ccc;
+    background-color: rgba(1, 1, 54, 0.855);
+    border-radius: 12px;
+    color: #ccc;
+
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#btn:hover {
+    color: rgba(1, 1, 54, 0.952);
+    background-color: #cccccc;
+    /* border: 2px solid rgba(1, 1, 54, 0.952); */
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: purple;
+    border-radius: 20px;
+}
+
+.icon:before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: purple;
+    left: 50%;
+    top: 18px;
+    translate: -50%;
+    rotate: 45deg;
+    z-index: -1;
+}
+
+.icon2:before {
+    background-color: orange;
+}
+
+.icon:after {
+    content: "#1";
+    color: black;
+    position: absolute;
+    text-align: center;
+    bottom: 27px;
+}
+
+.icon2:after {
+    content: "#2"
+}
+
+.icon i {
+    font-size: 2em;
+}
