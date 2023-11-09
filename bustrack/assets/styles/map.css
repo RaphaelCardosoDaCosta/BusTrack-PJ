@@ -53,10 +53,17 @@ body {
 #map-div {
     width: 70vw;
     height: 65vh;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 
     border-radius: 14px;
     background-color: #ccc;
+}
+
+#map-div iframe {
+    border-radius: 14px;
+
+    width: 70vw;
+    height: 65vh;
 }
 
 #btn {
@@ -65,7 +72,7 @@ body {
     padding: 4px;
     border: 1px solid #ccc;
     background-color: rgba(1, 1, 54, 0.855);
-    border-radius: 12px;
+    border-radius: 8px;
     color: #ccc;
 
     cursor: pointer;
@@ -120,3 +127,6 @@ body {
 .icon i {
     font-size: 2em;
 }
+
+
+/* fazer repsponsividade */
